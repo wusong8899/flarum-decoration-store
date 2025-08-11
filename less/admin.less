@@ -1,0 +1,288 @@
+.DecorationStore-loadMore {
+  text-align: center;
+}
+
+.decorationItemSettingContainer {
+  border: 1px dotted var(--control-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+}
+
+.decorationItemProperty {
+  padding-top: 5px;
+}
+
+.decorationItemProperty b{
+  color:var(--primary-color);
+}
+
+.decorationItemAvatarImage {
+  height:100px;
+  float:right;
+}
+
+.decorationItemUsernameColorStyle {
+  height:100px;
+  float:right;
+  font-size:20px;
+  margin-right: 10px;
+}
+
+.decorationItemProfileBackgroundImage{
+  width:170px;
+  height:80px;
+  float:right;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+}
+
+.decorationStoreSettingsLabel{
+  text-align: left;
+  padding: 10px 0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.DecorationStoreModalBody {
+  @media @desktop-up {
+    padding: 25px 30px !important;
+  }
+  @media @tablet {
+    padding: 25px 30px !important;
+  }
+  @media @phone {
+    padding: 15px 20px !important;
+  }
+}
+
+.DecorationStoreSelectionList{
+  font-size:12px;
+}
+
+.DecorationStoreFiltersFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationStoreFiltersCardsListItem.DecorationStoreFiltersCard {
+    @media @desktop-up {
+      height: 30px;
+    }
+    @media @tablet {
+      height: 30px;
+    }
+    @media @phone {
+      height: 40px;
+    }
+    margin-right: 20px;
+}
+
+.DecorationStoreItemButtonsFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationStoreItemButtonsCardsListItem.DecorationStoreItemButtonsCard {
+    @media @desktop-up {
+      height: 50px;
+    }
+    @media @tablet {
+      height: 50px;
+    }
+    @media @phone {
+      height: 45px;
+    }
+}
+
+.DecorationGalleryListFlexCard {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.DecorationGalleryListCardsListItem.DecorationGalleryListCard {
+  @media @desktop-up {
+    width: 32.8%;
+  }
+  @media @tablet {
+    width: 32.8%;
+  }
+  @media @phone {
+    width: 49.4%;
+  }
+  height: 154px;
+}
+
+.DecorationGalleryListCardAdjust{
+    margin-left:4px;
+}
+
+.DecorationGalleryItemAvatarImage{
+  height:80px;
+}
+
+.DecorationGalleryItemImage{
+  cursor: pointer;
+  margin-top: -30px;
+}
+
+.DecorationGalleryItemImageLabel{
+  position: absolute;
+  bottom: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.DecorationGalleryItemStyle{
+  cursor: pointer;
+  line-height: 3;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.DecorationGalleryItemStyleLabel{
+  position: absolute;
+  bottom: 8px;
+  padding: 2px 8px;
+  font-size: 12px;
+}
+
+.DecorationGalleryItemProfileBackgroundImage{
+  width: 128px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+  margin-top: 8px;
+}
+
+.DecorationGalleryContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dotted var(--control-color);
+  padding: 10px;
+  border-radius: var(--border-radius);
+  min-height: 150px;
+  position:relative;
+}
+
+#itemImageContainer{
+  border-radius: var(--border-radius);
+}
+
+.decorationButton--gray {background-color:#ddd;color:var(--button-color);padding-left:20px;padding-right:20px;}
+.decorationButton--gray:focus {background-color:#ddd;color:var(--button-color)}
+.decorationButton--gray:hover {background-color:#c6c6c6;}
+.decorationButton--gray:active {background-color:#c6c6c6;}
+.decorationButton--gray:disabled {background-color:#eee;}
+
+.decorationButton--green {background-color:#b4f1af;color:#33722d;padding-left:20px;padding-right:20px;}
+.decorationButton--green:focus {background-color:#b4f1af;color:#33722d}
+.decorationButton--green:hover {background-color:#a0ed99;}
+.decorationButton--green:active {background-color:#8be984;}
+.decorationButton--green:disabled {background-color:#b4f1af;}
+
+.decorationButton--yellow {background-color:#fbbc04;color:#fff;padding-left:20px;padding-right:20px;}
+.decorationButton--yellow:focus {background-color:#fbbc04;color:#fff}
+.decorationButton--yellow:hover {background-color:#e2a904;}
+.decorationButton--yellow:active {background-color:#c99603;}
+.decorationButton--yellow:disabled {background-color:#fbbc04;}
+
+
+
+/* ---------------------- */
+/*     Text Effects       */
+/* ---------------------- */
+
+
+.decorationStoreColorText1 {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: decorationStoreColorText1Animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes decorationStoreColorText1Animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+/* ---------------------- */
+/* ---------------------- */
+
+.decorationStoreColorText2{
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: decorationStoreColorText2Animation 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes decorationStoreColorText2Animation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* ---------------------- */
+/* ---------------------- */
+.decorationStoreColorText3 {
+  background: linear-gradient(219deg, 
+    #186cb8 19%, 
+    transparent 19%,transparent 20%, 
+    #2a9a9f 20%, #2a9a9f 39%,
+    transparent 39%,transparent 40%, 
+    #f1b211 40%,#f1b211 59% ,
+    transparent 59%,transparent 60%, 
+    #e83611 60%, #e83611 79%,
+    transparent 79%, transparent 80%, 
+    #f9002f 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* ---------------------- */
+/* ---------------------- */
+
+.decorationStoreColorText4 {color: red;}
+.decorationStoreColorText5 {color: orange;}
+.decorationStoreColorText6 {color: gold;}
+.decorationStoreColorText7 {color: green;}
+.decorationStoreColorText8 {color: darkcyan;}
+.decorationStoreColorText9 {color: blue;}
+.decorationStoreColorText10 {color: purple;}
+.decorationStoreColorText11 {color: pink;}
+.decorationStoreColorText12 {color: lightskyblue;}
+.decorationStoreColorText13 {
+  text-shadow: 
+    0 6px 4px #85c226,
+   -3px -5px 4px #fe2192,
+   3px -5px 4px #f7c200;
+}
